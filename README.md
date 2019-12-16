@@ -1,0 +1,3 @@
+# cw-katas
+
+No, I'm not the smartest or most clever, but some day...
