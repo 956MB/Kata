@@ -3,3 +3,15 @@ __pycache__
 .vscode
 notepad*.py
 notepad*.cc
+
+# Unfinished
+4kyu/Python/Permutations
+4kyu/Python/Snail
+4kyu/Python/Strip_Comments
+4kyu/Python/Counting_Change_Combinations
+5kyu/Python/Double_Cola
+5kyu/Python/Sum_of_Pairs
+5kyu/Python/Weight_for_weight
+5kyu/Python/soup.py
+4kyu/Python/maze.py
+6kyu/Python/Good_vs_Evil
