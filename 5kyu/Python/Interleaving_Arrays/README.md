@@ -1,0 +1,3 @@
+# Interleaving Arrays
+
+* https://www.codewars.com/kata/523d2e964680d1f749000135/train/python
