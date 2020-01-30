@@ -1,19 +1,20 @@
 #!/usr/bin/python3
 
-import string
+# Rot13
+# https://www.codewars.com/kata/530e15517bc88ac656000716/train/python
 
 def rot13(s):
-    output = ""
+    output, abc = "", "abcdefghijklmnopqrstuvwxyz"
     for l in s:
         if l.islower():
-            output += string.ascii_lowercase[(string.ascii_lowercase.find(l) + 13) % 26]
+            output += abc[(abc.find(l) + 13) % 26]
         if l.isupper():
-            output += string.ascii_uppercase[(string.ascii_uppercase.find(l) + 13) % 26]
+            output += abc.upper()[(abc.upper().find(l) + 13) % 26]
         if l in '0123456789!"#$%&\'()*+,-./:;?@[\\]^_`{|}~ ':
             output += l
     return output
 
 
 if __name__ == "__main__":
-    print(rot13("test"))
-    print(rot13("Test"))
+    print(rot13("test"), "grfg")
+    print(rot13("Test"), "Grfg")
