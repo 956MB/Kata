@@ -4,8 +4,7 @@
 # https://www.codewars.com/kata/55b080eabb080cd6f8000035/train/python
 
 def odd_one_out(s):
-    # print("Start:", s)
-    d, out = {}, []
+    d = {}
     for i in s:
         if not i in d:
             d[i] = 1
@@ -14,12 +13,7 @@ def odd_one_out(s):
             del d[i]
             d[i] = val + 1
 
-    for k,v in d.items():
-        if (v % 2) != 0:
-            out.append(k)
-
-    # print(d)
-    return out
+    return [k for k,v in d.items() if (v%2) != 0]
 
 if __name__ == '__main__':
     print(odd_one_out('Hello World'), ["H", "e", " ", "W", "r", "l", "d"])
