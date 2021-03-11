@@ -3,7 +3,8 @@
 # String -> N iterations -> String
 # https://www.codewars.com/kata/5ae43ed6252e666a6b0000a4/train/python
 
-def jumbled_string_mod(s, n):
+def jumbled_string(s, n):
+    print(len(s))
     # "jumble" until it gets back to its orignal string.
     # last iteration is the number to mod 'n' by
     og = s
@@ -16,7 +17,7 @@ def jumbled_string_mod(s, n):
 
     return f'Final: {s}, {i} iterations.\n'
 
-def jumbled_string(s, n):
+def jumbled_string_mod(s, n):
     m = 0
     og = s
     # first "jumble" loop to get string back to original.
@@ -42,4 +43,4 @@ if __name__ == "__main__":
     print("qtorieuwy",jumbled_string("qwertyuio",2))
     print("qtorieuwy", jumbled_string("qwertyuio",8764390076))
     print("Gtsegenri",jumbled_string("Greetings",8))
-    print("criyinodedsgufrnodnoser", jumbled_string("codingisfornerdsyounerd",10101010))
+    print("criyinodedsgufrnodnoser", jumbled_string_mod("codingisfornerdsyounerd",10101010))
