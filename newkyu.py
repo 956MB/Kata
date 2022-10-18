@@ -41,5 +41,7 @@ if __name__ == "__main__":
     ap._action_groups.append(opt)
     args = vars(ap.parse_args())
 
-    kyu, name, link = str(args["kyu"]), args["name"], args["link"]
-    main()
+    kyu, name, link = str(args["kyu"]).replace(" ", "_"), args["name"], args["link"]
+    print("({}, {}, {}) {}".format(kyu + "kyu", name, link, "Template created."))
+
+    # main()
