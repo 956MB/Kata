@@ -1,3 +1,4 @@
+.DS_Store
 *.swp
 __pycache__
 .vscode
@@ -15,3 +16,6 @@ notepad*.cc
 4kyu/Python/maze.py
 6kyu/Python/Good_vs_Evil
 .fleet
+
+generate_readme.py
+newkyu.py
